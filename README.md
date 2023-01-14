@@ -2,6 +2,7 @@
 In this repo, you can find all 150 solutions to top interview questions from leetcode.
 
 So far solved the following problems:
+
 Easy:
 1. Two Sum
 13. Roman to Integer
@@ -17,6 +18,7 @@ Easy:
 283. Move Zeroes
 326. Power of Three
 412. Fizz Buzz
+
 
 Medium:
 3. Longest Substring Without Repeating Characters
