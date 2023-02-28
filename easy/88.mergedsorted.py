@@ -8,13 +8,13 @@ def merge(nums1, m, nums2, n):
     """
     
     if m == 0:
-        return sorted(nums2[:n])
+        nums1[:] = nums2[:n]
     elif n == 0:
-        return sorted(nums1[:m])
+        nums1[:] = nums1[:m]
     else:
-        val = nums1[:m] + nums2[:n]
-        return sorted(val)
-x = merge([1,2,3,0,0,0], 3, [2,5,6], 3)
-print(x)
-x = merge([1], 1, [], 0)
-print(x)
+        nums1[:] = nums1[:m] + nums2[:n]
+        nums1[:] = sorted(nums1)
+    
+merge([1,2,3,0,0,0], 3, [2,5,6], 3)
+merge([1], 1, [], 0)
+merge([0], 0, [1], 1)

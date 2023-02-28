@@ -4,7 +4,6 @@ def isAnagram(s, t):
     :type t: str
     :rtype: bool
     """
-    # print(s, t[::-1])
     if sorted(s) == sorted(t):
         return True
     else:
