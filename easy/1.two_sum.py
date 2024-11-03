@@ -1,22 +1,17 @@
-def twoSum(nums, target):
-    """
-    :type nums: List[int]
-    :type target: int
-    :rtype: List[int]
-    """
-    
-    mapper = {}
-    res = []
-    for i, v in enumerate(nums):
-        difference = target - v
-        if difference in mapper:
-            res.append(mapper[difference]+1)
-            res.append(i+1)
-            break
-        else:
-            mapper[v] = i
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
         
-    print(res)
+        mapper = {}
+        for i, v in enumerate(nums):
+            if target - nums[i] in mapper:
+                return (mapper[target-nums[i]], i)
+            mapper[nums[i]] = i
 
-twoSum([2,7,11,15], 9)
-twoSum([2,3,4], 6)
+obj = Solution()
+print(obj.twoSum([2,7,11,15], 9))
+print(obj.twoSum([3,2,4], 6))
