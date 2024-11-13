@@ -1,13 +1,14 @@
-def subsets(nums):
-    """
-    :type nums: List[int]
-    :rtype: List[List[int]]
-    """
+class Solution(object):
+    def subsets(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        
+        print(nums)
+        val = []
+        val.append([])
+        print(val)
     
-    print(nums)
-    val = []
-    val.append([])
-    print(val)
-    
-    
-subsets([1,2,3])
+obj = Solution()
+print(obj.subsets([1,2,3]))
