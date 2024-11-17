@@ -1,17 +1,18 @@
-def isMatch(s, p):
-    """
-    :type s: str
-    :type p: str
-    :rtype: bool
-    """
-    
-    if s == p:
-        print('truee')
-    
-    if '*' in p:
+class Solution(object):
+    def isMatch(self, s, p):
+        """
+        :type s: str
+        :type p: str
+        :rtype: bool
+        """
         
-        print('* or . here')
+        if s == p:
+            print('truee')
+        
+        if '*' in p:
+            
+            print('* or . here')
     
-
-isMatch('aa', 'a')
-isMatch('aa', 'a*')
+obj = Solution()
+print(obj.isMatch('aa', 'a'))
+print(obj.isMatch('aa', 'a*'))
